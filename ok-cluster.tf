@@ -5,16 +5,16 @@ resource "kubernetes_manifest" "cluster_ok_cluster" {
   }
   manifest = {
     "apiVersion" = "anywhere.eks.amazonaws.com/v1alpha1"
-    "kind" = "Cluster"
+    "kind"       = "Cluster"
     "metadata" = {
-      "name" = "ok-cluster"
+      "name"      = "ok-cluster"
       "namespace" = "default"
     }
     "spec" = {
       "bundlesRef" = {
         "apiVersion" = "anywhere.eks.amazonaws.com/v1alpha1"
-        "name" = "bundles-17"
-        "namespace" = "eksa-system"
+        "name"       = "bundles-17"
+        "namespace"  = "eksa-system"
       }
       "clusterNetwork" = {
         "cniConfig" = {
@@ -42,14 +42,14 @@ resource "kubernetes_manifest" "cluster_ok_cluster" {
       "externalEtcdConfiguration" = {
         "count" = 1
       }
-      "kubernetesVersion" = "1.23"
+      "kubernetesVersion" = "1.21"
       "managementCluster" = {
         "name" = "ok-cluster"
       }
       "workerNodeGroupConfigurations" = [
         {
           "count" = 1
-          "name" = "md-0"
+          "name"  = "md-0"
         },
       ]
     }
