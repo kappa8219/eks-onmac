@@ -42,7 +42,7 @@ resource "kubernetes_manifest" "cluster_ok_cluster" {
       "externalEtcdConfiguration" = {
         "count" = 1
       }
-      "kubernetesVersion" = "1.21"
+      "kubernetesVersion" = "1.23"
       "managementCluster" = {
         "name" = "ok-cluster"
       }
