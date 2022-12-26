@@ -10,3 +10,13 @@ terraform import kubernetes_manifest.cluster_ok_cluster "apiVersion=anywhere.eks
 terraform apply
 ```
 
+### Added csi-driver for statefull workload:
+
+```bash
+git clone https://github.com/kubernetes-csi/csi-driver-host-path.git
+cd csi-driver-host-path-master/
+make
+deploy/kubernetes-latest/deploy.sh
+kubectl get csinodes
+for i in ./examples/csi-storageclass.yaml ./examples/csi-pvc.yaml ./examples/csi-app.yaml; do kubectl apply -f $i; done
+````
