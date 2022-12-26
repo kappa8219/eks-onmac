@@ -1,6 +1,6 @@
 # EKS ~~Anywhere~~ OnMac
 
-Docker Desktop used as a runntime
+Docker Desktop used as a runtime
 
 ```bash
 export CLUSTER_NAME=ok-cluster
