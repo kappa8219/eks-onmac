@@ -20,3 +20,5 @@ deploy/kubernetes-latest/deploy.sh
 kubectl get csinodes
 for i in ./examples/csi-storageclass.yaml ./examples/csi-pvc.yaml ./examples/csi-app.yaml; do kubectl apply -f $i; done
 ````
+
+Load balancing is available as a paid package for now. So local port-forwards are for publishing stuff. For now.
