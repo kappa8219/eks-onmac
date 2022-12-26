@@ -14,7 +14,7 @@ terraform apply
 
 ```bash
 git clone https://github.com/kubernetes-csi/csi-driver-host-path.git
-cd csi-driver-host-path-master/
+cd csi-driver-host-path/
 make
 deploy/kubernetes-latest/deploy.sh
 kubectl get csinodes
