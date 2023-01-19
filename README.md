@@ -1,5 +1,7 @@
 # EKS ~~Anywhere~~ OnMac
 
+_Disclamer! I'm not sure if MacBook is a good place for K8S playgrounds, but I have spare resources on it and have it in a backpack often_
+
 Docker Desktop used as a runtime
 
 ```bash
