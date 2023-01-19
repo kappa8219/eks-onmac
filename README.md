@@ -1,5 +1,7 @@
 # EKS ~~Anywhere~~ OnMac
 
+_Disclamer! I'm not sure if MacBook is a good place for K8S playgrounds, but I have spare resources on it and have it in a backpack often_
+
 Docker Desktop used as a runtime
 
 ```bash
@@ -14,7 +16,7 @@ terraform apply
 
 ```bash
 git clone https://github.com/kubernetes-csi/csi-driver-host-path.git
-cd csi-driver-host-path-master/
+cd csi-driver-host-path/
 make
 deploy/kubernetes-latest/deploy.sh
 kubectl get csinodes
