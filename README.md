@@ -2,7 +2,7 @@
 
 _Disclaimer! I'm not sure if MacBook is a good place for K8S playgrounds, but I have spare resources on it and have it in a backpack often_
 
-Docker Desktop used as a runtime
+Docker Desktop used as an engine
 
 ```bash
 export CLUSTER_NAME=ok-cluster
