@@ -5,6 +5,11 @@ _Disclaimer! I'm not sure if MacBook is a good place for K8S playgrounds, but I 
 Docker Desktop used as an engine
 
 ```bash
+brew install aws/tap/eks-anywhere
+```
+
+Create cluster and tf it
+```bash
 export CLUSTER_NAME=ok-cluster
 eksctl anywhere generate clusterconfig $CLUSTER_NAME --provider docker > $CLUSTER_NAME.yaml
 eksctl anywhere create cluster -f $CLUSTER_NAME.yaml
